@@ -1,0 +1,15 @@
+
+{% extends 'core/main.html' %}
+{% load static %}
+{% block content %}
+<div class="col-sm-4 ml-0">
+    <h3 class="text-center alert alert-info">Add Book To Library</h3> 
+  
+   <form action="" method="POST" style="color:black;">
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" class="btn btn-success" value="Add Book">
+
+
+   </form>  
+   {% endblock %}
